@@ -59,10 +59,26 @@ export const ApexChart = () => {
             title: {
                 text: 'Hours',
                 offsetY: 120,
-            }
+            },
         },
         yaxis: {
             decimalsInFloat: 2,
+        },
+        annotations: {
+           xaxis: [
+               {
+                   x: '10-14',
+                   borderColor: '#fb0101',
+                   opacity: 1,
+                   label: {
+                       style: {
+                           background: '#fb0101',
+                           color: '#fff',
+                       },
+                       text: 'Selected day'
+                   }
+               }
+           ]
         }
     };
 
